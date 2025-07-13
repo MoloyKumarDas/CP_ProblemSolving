@@ -1,0 +1,201 @@
+// good problem to choose for contest  
+
+
+// 800 //  codeforces Round 744 (div 3)    
+                // main command // number of B=2*s.size()  // easy but at first // did not catch the line and made it complex
+
+//800 //  codeforces round  656 (div 3)
+//800 //  codeforces round 725 (div 3) 
+//800  //  codeforces round 806 (div 4 --(c))
+//800  //  codeforces round 898 (div 4 --(c))
+//800  //  codeforces round 795 (div 2 --(a))   //easy but don't make it complex
+//800  //  codeforces round 811 (div 3 --(c))    // moja
+//800 // codechef starter 120 (div 4-- (d))
+//800 // codeforces round 131 (div 2-- (b))    // seive algorithm
+//800 // codeforces round 167 (div 2-- (a))
+//800 // codechef starter 147 (div 4-- (b))
+//800 // codechef starter 149 (div 4-- (b))  // 4 3 2
+
+
+//900 // codeforces round 710 (div 3-- (a))
+//900 // codeforces round 791 (div 2-- (a))
+//900 // codeforces round 386 (div 2-- (b))
+//900 // codeforces round 163 (div 2-- (b))
+//900 // codeforces round 934 (div 2-- (b))
+//900 // codeforces Round 839 (div 3-- (c))
+//900 // codeforces round 795 (div 2-- (b))
+//900 // codechef starter 130 (div 4 --(d))
+//900 // codeforces Round 940 (div 2 --(b))
+//900 // codeforces Round 941 (div 2 --(a))
+
+
+//1000 // codeforces round 142 (div 2-- (b))    
+//1000 // codeforces round 119 (div 2-- (a))    practice this sometimes
+//1000 // codeforces round 258 (div 2-- (b))
+//1000 // Codeforces Round 694 (Div 1-- (a))
+//1000 // codeforces Round 112 (Div 2-- (c))         // not make the logic complex // think easily
+//1000 // codeforces Round 613 (div 2-- (b))
+//1000 // codeforces Round 799 (div 4-- (f))
+//1000 // codeforces Round 892 (div 2 --(b))
+//1000 // codeforces Round 936 (div 2-- (b)) // modulo operation with maximum subarray 
+//1000 // codeforces Round 150 (div 2-- (b))
+//1000 // codeforces Round 139 (div 2-- (b))  // moja ache // overlaping case ***   // practice sometimes 
+//1000 // codechef starter Round 128 (div 4 -- (d))  // practice // sometimes  // substring
+//1000 // codechef starter Round 129 (div 4 -- (c))
+//1000 // codeforces Round 943 (div 3-- (d))
+
+
+//1100 // codeforces Round 941 (div 2-- (b))  // pattern //practice sometimes // make all the cell into same colour
+//1100 // codechef starter 129 (div 4-- (d))  // palindromic string 
+//1100 // codeforces Round 164 (div 2-- (b))
+
+
+//1200 // codeforces Round 164 (div 2-- (c)) //practice sometimes // math concept
+//1200 // codeforces Round 938 (div 3-- (c))  // suffix // prefix
+//1200 // codeforces Round 944 (div 4-- (d))
+//1200 //codechef starter 135 (div 4 -- (d)) // practice sometimes ***
+//1200 //codeforces global Round  25 -- (b)
+//1200 // codeforces Round 933 (div 3-- (d))  *** // practice sometimes // first glance it seems --recursion/tree // but actually brute force
+//1200 // codechef starter 145 (div 4-- (d))
+//1200 // codechef starter 143 (div 4-- (c))  // good
+//1200 // codechef starter 148 (div 4-- (c))
+//1200 // codechef starter 149 (div 4-- (c))
+//1200 // codechef starter 153 (Div 4-- (d))
+//1200 // codeforces Round 967 (div 2-- (b))  // a little bit tricky
+//1200 // codeforces Round 924 (div 2-- (b)) // good // lower bound concept 
+//1200 // codeforces Round 986 (div 2-- (b)   //  adhoc  // also ceilling concept
+//1200 // codeforces Round 1000(div 2-- (b))   //subsequence ,segment
+//1200 // Codeforces Round 1006(Div 3-- (b))  ** // or operation  // bit masking
+//1200 // Educational Codeforces Round 177(div 2--(b))  ** // array sum // reduce complexity
+//1200 // Codeforces Round 1035(Div 3-- (c))   ** // bit manipulation & observation
+
+
+
+/*-------1200 rating--------------- TLE ELIMINATOR -----------------------------------------------------------------*/
+
+//1200 // codeforces Round 916 (div 3-- (d))  //  vector of pair  & brute force // good concept
+//  https://codeforces.com/contest/1909/problem/B
+//1200 895 div 3--d    // lcm,gcd // time limit problem
+//1200 891 div 3--c    // map  // reform array
+//1200 148 div 2--c    //consecutively unique concept 
+//1200 861 div 2--b    // time limit using brute force  // suffix prefix concept
+//1200 852 div 2--c    // find subsegment
+//1200 847 div 3--d    //timit limit using brute force
+//1200 827 div 4--e    //timit limit using brute force // upper bound
+//1200 820 div 3--d    // just for observation practice
+//1200 806 div 4--e    *** //  mathmatical thinking      // practice sometimes
+//1200 799 div 4--e    *** // upper bound for subarray // subarray sum concept but brute force give time limit
+//1200 791 div 2--b    ** // reduce worst complexity from (n*q) to (n+q)
+//1200 127 div 2--c    ** // complexity reduce by math
+//1200 750 div 2--c    // understand complexity // without understand, don't think that my solution will get TLE
+//1200 728 div 2--b     // pair // reduce loop complexity from n^2 to O(n√n)   // inner loop O(√n) instead of O(n)
+//1200 724 div 2--b     // brute force    //  operation of  string
+//1200 719 div 3--d    // easy  // mathematical  // just look at condition
+//1200 716 div 2--b    // binary exponential   // easy
+//1200 672 div 2--b    // logical and and XOR
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+//1300 // codeforces Round 940(div 2 -- (c))  // dp  // rock problem // chess
+//1300 // codeforces Round 943(div 3 -- (e))  // practice sometimes // pattern
+//1300 // codeforces Round 946(div 3 -- (b)) // read question carefully
+//1300 // codeforces Round 163(div 2 -- (c))  ***
+//1300 // codeforces Round 931(div 2 -- (b))  *** sum of minimum number
+//1300 // codechef starter 152(div 4 -- (d))
+//1300 // codeforces round 1009(div 3 -- (c))   // basic XOR
+//1300 // codeforces Round 1022(div 2 -- (b))  ** // xor
+//1300 // codeforces Round 180(div 2-- (c))   *** // 2 pointer approach      // sum of sorted array
+//1300 // codeforces Round 1032(div 3--(d))  ** // bubble sort & complexity
+
+
+/*------------------------------------1300 TLE eliminator------------------------------------*/
+
+//1300 // codeforces Round 925(div 3 -- (d)  ** //  % mod // firstly math // map of pair
+//1300 // codeforces Round 918(div 4 -- (e))  // basic & common ques // prefix sum // subarray sum 0
+//1300 // codeforces Round 903(div 3 -- (d))  * // prime factorization
+//1300 // codeforces Round 856(div 2 -- (c))  * // math and binary search
+//1300 // codeforces Round 843(div 2 -- (b))  * // bitwise or operation concept
+//1300 // codeforces Round 806(div 4 -- (f))  // implementation  // reduce complexity // binary search
+//1300 // codeforces Round 790(div 4 -- (g))  *** // dfs implementation   // tree
+//1300 // codeforces Round 784(div 4 -- (h))  // easy  but be confident  // bit manipulation // implementation
+//1300 // codeforces Round 751(div 1 -- (a))  * // brain storming  // number theory // logical and
+//1300 // codeforces Round 435(div 2 -- (b))  ** //   bipartite graph/queue
+//1300 // Educational Codeforces Round 21-(b)  *** // prefix sum
+
+/*-----------------------------------------------------------------------------------*/
+
+//1400 // codeforces Round 149(div 2-- (d))  // stack  // adhoc
+//1400 // codeforces Round 900(div 3-- (e))   /*  ****  */    // bit manipulation // binary
+//1400 // codeforces Round 973(div 2-- (c)) // interactive problem
+//1400 // codeforces Round 986(div 2-- (c)) // adhoc problem
+
+
+
+
+/*-------------------------------------mathematical or pattern ------------------------------------------------*/
+
+//1000 // codeforces Roound 1014(div 2--(a))   ** // math & observation
+
+//1200 // codeforces Round 174(div 2--(b))     // puzzle or pattern type  // observation
+//1200 // codeforces Round 1017(div 4-- (f))  **  // pattern   // cyclic shift  // implementation
+//1200 // educational codeforces round 173(div 2--(b))   // math
+//1200 // codeforces Round 1028(div 2--(b))   // aware
+//1200 // codeforces Round 1031(div 2--(b))   ** // pattern
+//1200 // codeforces Round 1029(div 3--(d))   *** // basic algebra   // math
+
+//1300 // codeforces Round 740(div 2 --(c))   // mathematically   //tle eleminator
+//1300 // codeforces Round 691(div 2--(b))     // pattern           // tle eleminator
+//1300 // codeforces Round 655(div 2--(b))     // math //  LCM      // tle    "
+//1300 // codeforces Round 644(div 3--(d))     // math  // just for practice   //easy
+//1300 // codeforces Round 1014(div 2 --(b))  ** // observation // like pattern 
+//1300 // codeforces Round 1025(div 2--(b))   *** // pattern & observation
+//1300 // codeforces Round 1030(div 2--(b))   ****  // pattern
+//1300 // codeforces round 1032(div 3--(c))   ** // pattern
+//1300 // codeforces round 1030(div 2--(c))   *** // bit manipulation
+
+/*------------------------------------adhoc/observation--------------------------------------------------------------*/
+
+//1000 // codeforces round 1027(div 3-- (b))        // observation
+//1000 // codeforces round 1026(div 2-- (b))        // observation
+
+
+//1100 // educational codeforces round 178(div 2--(b))   // observation
+//1100 // codeforces round 1005(div 2-- (b))        //observation
+
+
+//1200 // Codeforces Round 1018(Div1 +Div2--(b))    // observation
+//1200 // codeforcces Round 1004(div 2--(b))       // observation
+//1200 // codeforces Round 1033(div 2--(b)        //observation
+
+//1300 // codeforces Round 994(div 2--(b))        // observation
+//1300 // codeforces Round 997(div 2--(b))  ***  // observation      // also practice the thing of 2nd accepted solution
+//1300 // codeforces round 1022(div 2--(b))     // observation
+//1300 // Codeforces Round 1035(Div 3-- (b))
+
+
+//1400 // codeforces Round 1024(div 2--(b))   ** // observation
+//1400 // codeforces Round 1026(div 2--(c))
+
+
+//1500 // codeforces round 1019(div 2 --(c))     ** // logic & implementation    // a little bit tricky
+//1500 // codeforces Round 994 (div 2 --(c))     ** // observation
+//1500 // codeforces round 1023(div 2 --(c))     ** // observation
+
+
+/*-------------------------------------practice---common problem-----------------------------------------------------------*/
+
+//1300 // codeforces Round 649(div 2 -- (b))  ** // just for practice    // shortest length of maximum sum of subsequence   // tle eleminator
+//1500 // education codeforces Round 175(div 2--(c))  *** // binary search  // a little bit tricky
+
+
+/*------------------------------------practive implementation----fast--------------------------------------------------------*/
+
+//1300 // codeforces Round 1012(div 2 -- (b))  //just for practice
+//1300 // codeforces Global Round 5 -- (b))   // just for practice   //tle eleminator
+//1300 // codeforces Global Round 4 -- (b))  * // just for practice   // reduce complexity   // avoid, use of size() in loop condition    //tle eleiminator
+//1300 // codeforces Round 1017(div 4-- (e))  ***  // bitwise xor
+//1300 // Educational Codeforces Round 177(div 2--(c))   *** // implementation
+
+//1200 // codeforces Round 1017(div 4-- (d))  *** // implementation
+
