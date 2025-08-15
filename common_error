@@ -1,0 +1,1 @@
+collect2.exe: error: ld returned 1 exit status                     // may be built in function/library  missing or wrong name   // example: if mdin instead of main  
