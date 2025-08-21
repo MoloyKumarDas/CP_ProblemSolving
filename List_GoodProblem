@@ -137,8 +137,10 @@
 
 
 /*-------------------------------------mathematical or pattern ------------------------------------------------*/
+//1000 // codeforces round 1043(div 3--(b))  // math  // i made the logic complex instead of calculating the equation
 
-//1000 // codeforces Roound 1014(div 2--(a))   ** // math & observation
+//1000 // codeforces Round 1014(div 2--(a))   ** // math & observation
+
 
 //1200 // codeforces Round 174(div 2--(b))     // puzzle or pattern type  // observation
 //1200 // codeforces Round 1017(div 4-- (f))  **  // pattern   // cyclic shift  // implementation
