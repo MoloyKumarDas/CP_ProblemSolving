@@ -110,6 +110,7 @@
 //1300 // codeforces Round 180(div 2-- (c))   *** // 2 pointer approach      // sum of sorted array
 //1300 // codeforces Round 1032(div 3--(d))  ** // bubble sort & complexity
 //1300 // codeforces Round 991(div 3--(d))    // optimization from n^2 to n  // used bubble sort that give TLE
+//1300 // codeforces Round 981(div 3--(d))  *** // prefix sum  // not overlap ( like dp/implementation)
 
 
 /*------------------------------------1300 TLE eliminator------------------------------------*/
