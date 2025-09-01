@@ -113,6 +113,7 @@
 //1300 // codeforces Round 981(div 3--(d))  *** // prefix sum  // not overlap ( like dp/implementation)
 //1300 // codeforces Round 1005(div 2--(c)) *** // prefix ,suffix sum
 
+
 /*------------------------------------1300 TLE eliminator------------------------------------*/
 
 //1300 // codeforces Round 925(div 3 -- (d)  ** //  % mod // firstly math // map of pair
@@ -163,6 +164,7 @@
 //1300 // codeforces round 1030(div 2--(c))   *** // bit manipulation
 //1300 // educational round 181(div 2--(c))   ** // math // union set formula // reverse thinking
 //1300 // codeforces round 1013(div 3--(e))  ** // math  // seive 
+//1300 // codeforces Round 993(div 4--(e))  ** // math
 
 /*------------------------------------adhoc/observation--------------------------------------------------------------*/
 
