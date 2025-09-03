@@ -1,1 +1,16 @@
 collect2.exe: error: ld returned 1 exit status                     // may be built in function/library  missing or wrong name   // example: if mdin instead of main  
+
+
+/*----------------------------------------------------------------aware while using sqrt---------------------------------------------------------------------*/
+cout << (ll)sqrt(854258780613619262) << endl; // Outputs: 924261208
+cout << (ll)sqrtl(854258780613619262) << endl; // Outputs: 924261207           // correct                // problem faced: 976 div2--(b)
+
+
+ll rt(ll x) {                                     // sohag bhai's user defined sqrt funcion                
+  ll p = sqrtl(x);
+  while (p * p <= x) ++p;
+  while (p * p > x) --p;
+  return p;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
