@@ -1,0 +1,13 @@
+v1.erase(v1.begin())     For each operation,    complexity:  O(n) , because erase from the beginning of a vector shifts all elements left
+
+
+        // if (v1.size() > 0 && v1[0] == v2[i])                            977(div 2--c1)
+        if (j < v1.size() && v1[j] == v2[i])
+        {
+            mp[v2[i]] = 1;
+            // v1.erase(v1.begin());                               // it got time limit exceeded       // after removing this and use var j to pass index, then it accepted 
+            j++;
+            prev = v2[i];
+        }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
