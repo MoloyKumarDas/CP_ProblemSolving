@@ -184,7 +184,7 @@
 //1200 // atto round 1041(div1+div2--(b))       // observation  // don't make implementation complex  // don't complex for one side -1 ,aware while initialize variable
 //1200 // codeforces round 957(div 3--(d))      // observation   //  practice/think simple brute force   // don't make complex
 //1200 // codeforces round 976(div 2--(b))     ** // observation    // binary search & sqrtl    // be aware about sqrt
-
+//1200 // EPIC Institute of Technology Round August 2024 (Div. 1 + Div. 2)--c           // like geometry but not   // observation   // don't make it complex 
 
 //1300 // codeforces Round 994(div 2--(b))        // observation
 //1300 // codeforces Round 997(div 2--(b))  ***  // observation      // also practice the thing of 2nd accepted solution
