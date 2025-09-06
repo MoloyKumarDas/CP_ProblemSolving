@@ -113,7 +113,7 @@
 //1300 // codeforces Round 981(div 3--(d))  *** // prefix sum  // not overlap ( like dp/implementation)
 //1300 // codeforces Round 1005(div 2--(c)) *** // prefix ,suffix sum
 //1300 // codeforces Round 964(div 4--(e))  ** // prefix sum  // reduce complexity
-
+//1300 // TFC-8, 06-09-25  https://vjudge.net/contest/745733       ***       // bit manipulation
 
 /*------------------------------------1300 TLE eliminator------------------------------------*/
 
