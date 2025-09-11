@@ -13,4 +13,30 @@ ll rt(ll x) {                                     // sohag bhai's user defined s
   return p;
 }
 
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------avoid using LLONG_MIN and LLong_MAX---------------------------------------------------------------------------------------------------*/
+LLONG_MIN = -9223372036854775808
+LLONG_MIN - 14 + 0 = -9223372036854775822
+                 but
+-2e18 - 14 + 0 = -2000000000000000014
+
+
+
+below code snippet:
+
+    // ll maxi1 = LLONG_MIN, mini1 = LLONG_MAX;             //avoid this     // 1049(div2-c) got wrong for this
+    ll maxi1 = -2e18, mini1 = 2e18;
+    for (ll i = 0; i < n; i++)
+    {
+        if (i & 1)
+        {
+            sum -= a[i];
+            maxi1 = max(maxi1, 2 * a[i] - i);
+            maxi = max(maxi, 2 * a[i] + i - mini1);
+        }
+        else
+        {
+            sum += a[i];
+            maxi = max(maxi, maxi1 - 2 * a[i] + i);           // error point
+            mini1 = min(mini1, 2 * a[i] + i);
+        }
+    }
