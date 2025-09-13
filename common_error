@@ -40,3 +40,10 @@ below code snippet:
             mini1 = min(mini1, 2 * a[i] + i);
         }
     }
+/*------------------------------------------------------------small but empactfull error------------------------------------------------------------------------------------/
+fastio                    // because of not using this,you may got wrong answer 
+
+
+
+
+
