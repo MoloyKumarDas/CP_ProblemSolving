@@ -1,0 +1,76 @@
+// \***********************************************************************************************/
+
+// |\       /| /"""""\ |         /"""""\  \   |
+// | \     / | |     | |         |     |   \  |
+// |  \   /  | |     | |         |     |    \ |
+// |   \ /   | |     | |         |     |      |
+// |         | \_____/ |_______  \_____/      |
+
+// \***********************************************************************************************/
+
+#include <bits/stdc++.h>
+using namespace std;
+#define fastio                    \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(NULL)
+#define vi vector<int>
+#define ll long long
+#define vl vector<ll>
+#define ff first
+#define ss second
+#define pi pair<int>
+#define pl pair<ll>
+#define for_0(n) for (ll i = 0; i < n; i++)
+#define for_n(n) for (ll i = n - 1; i >= 0; i--)
+const ll M = 1e9 + 7;
+#define mod1(sum) sum = (sum % M + M) % M;
+#define yes cout << "YES";
+#define no cout << "NO";
+#define sort1(v) sort(v.begin(), v.end());
+#define reverse1(v) reverse(v.begin(), v.end());
+
+const int N = 1e3 + 10;
+
+vector<int> g[N];
+bool vis[N];
+void dfs(int vertex)
+{
+    cout << vertex << endl;
+    vis[vertex] = true;
+    for (int child : g[vertex])
+    {
+        cout << "par:" << vertex << ",child:" << child << endl;
+        if (vis[child])
+            continue;
+        dfs(child);
+    }
+}
+
+// sample input
+//  6 9
+//  1 3
+//  1 5
+//  3 5
+//  3 4
+//  3 6
+//  3 2
+//  2 6
+//  4 6
+//  5 6
+
+int main()
+{
+    fastio;
+    ll n, m;
+    cin >> n >> m;
+    for (int i = 0; i < 9; i++)
+    {
+        int v1, v2;
+        cin >> v1 >> v2;
+        g[v1].push_back(v2);
+        g[v2].push_back(v1);
+    }
+    dfs(1);
+
+    return 0; // ha ha ha
+}
