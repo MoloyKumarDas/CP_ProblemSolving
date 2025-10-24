@@ -145,7 +145,9 @@
 
 
 
-/*----------------------------------------------------graph & dp----------------------------------------------------------*/
+/*----------------------------------------------------graph & dp & tree----------------------------------------------------------*/
+//1300 // codeforces round 1051(div 2--(c))  *** observation & dfs\bfs
+
 //1400 // Vjudge: 746948 (B) // Gym - 101667C     ***    // basic graph & dp
 
 
@@ -218,6 +220,8 @@
 //1300 // codeforces Round 1054(div 3--(d)) ** // deep observation 
 //1300 // educatoional Round 182(div 2--(c))   ** // deep observation // brain storming
 //1300 // codeforces Round 1058(div 2--(c)  **   // observation // bit manipulation  // be fast
+//1300 // codeforces round 1051(div 2--(c))  *** observation & dfs\bfs
+
 
 //1400 // codeforces Round 1024(div 2--(b))   ** // observation 
 //1400 // codeforces Round 1026(div 2--(c))
@@ -248,6 +252,7 @@
 //1300 // educational codeforces Round 183(div 2--(c))  ***// challenging implementation ,be fast
 //1300 // codeforces Round 945(div 2--(b))  ** // optimization  // be fast  // binary search or other implementation
 //1300 // codeforces Round 1060(div 2--(c)) *** // optimization // sieve 
+//1300 // codeforces round 1051(div 2--(c))  *** observation & dfs\bfs
 
 //1200 // codeforces Round 1017(div 4-- (d))  *** // implementation
 //1200 // codeforces Round 975(div 2--(b)   
