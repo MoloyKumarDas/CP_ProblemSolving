@@ -1,0 +1,60 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution                                    // practicing class      // leetcode format
+{
+public:
+    vector<int> countBits(int n)
+    {
+        vector<int> v1(n + 1);
+        for (int i = 1; i <= n; i++)
+        {
+            int cnt = 0;
+            for (int j = 0; j < 30; j++)
+            {
+                if ((1 << j) & i)
+                    cnt++;
+                if ((1 << j) > 1e5)
+                    break;
+            }
+            v1[i] = cnt;
+        }
+        return v1;
+    }
+};
+
+// vector<int> countBits(int n)                          // practing function   // vector as a return value
+// {
+//     vector<int> v1(n + 1);
+//     for (int i = 1; i <= n; i++)
+//     {
+//         int cnt = 0;
+//         for (int j = 0; j < 30; j++)
+//         {
+//             if ((1 << j) & i)
+//                 cnt++;
+//             if ((1 << j) > 1e5)
+//                 break;
+//         }
+//         v1[i] = cnt;
+//     }
+//     return v1;
+// }
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    Solution obj;                                 // obj is just an instance of that class.
+                                                 // Think of Solution as a blueprint (class)
+                                                // and obj as the actual working machine built from that blueprint (object)
+
+    vector<int> result = obj.countBits(n);     // calls the function countBits() from your Solution object obj
+
+    // vector<int> result = countBits(n);
+    for (auto d : result)
+        cout << d << " ";
+
+    return 0;
+}
