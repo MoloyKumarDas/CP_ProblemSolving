@@ -44,6 +44,27 @@ below code snippet:
 fastio                    // because of not using this,you may got wrong answer 
 
 
+/*--------------------------------------------------------------------initialize-------------------------------------------------------------------------------------*/
 
+    
+    ll a[n + 1];
+    vl v1;
+    for (ll i = 1; i <= n; i++)
+    {
+        cin >> a[i];
+        if (a[i] != -1)
+            v1.push_back(a[i]);                               // this will give logical error  // don't print anything 
+    }
+
+                                -------------------------------vs--------------------------------              these 2 work properly                                    
+    vector<ll>a(n+1);                                                            ll a[n + 1];
+    vl v1;                                                                       vl v1;
+    for (ll i = 1; i <= n; i++)                                                  for (ll i = 1; i <= n; i++)
+    {                                                                            {
+        cin >> a[i];                                                                 ll x;
+        if (a[i] != -1)                                                              cin>>x;
+            v1.push_back(a[i]);                                                      if (a[i] != -1)
+    }                                                                                v1.push_back(x);
+                                                                                  }      
 
 
