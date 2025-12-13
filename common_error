@@ -67,4 +67,23 @@ fastio                    // because of not using this,you may got wrong answer
     }                                                                                v1.push_back(x);
                                                                                   }      
 
+/*----------------------------------------------v1[N],large vector/array should allocate outside function--------------------------------------------
+
+const ll N = 1e5 + 7;
+void solve(){
+vl v1[N];                    // Never allocate large arrays or vector arrays inside a function   // silent stack crash/overflow // unexpected behaviour but don't give compiler error
+.........                    // Stack size is usually 8MB  // for large N overflow happens
+.........                    // Stack size is usually 8MB
+}
+
+
+----------------------correct-----------------
+const N=1e5+7;
+vl v1[N];                  // Globals go to static memory, not stack  // so it can handle easily
+void solve(){
+......
+.....
+}
+
+
 
