@@ -1,0 +1,41 @@
+/*------------------------------------------------------------  vl[N]----vs-----vector<vector<ll>>v1(N)  -----------------------------------------------------------------*/
+
+//-----------------------------v1[N]-----------------
+stack overflow can happen even if the vectors are empty.
+The elements of a vector live on the heap,
+but the vector object (metadata) always exists immediately.
+  
+Typically (on 64-bit systems), a vector contains:
+
+pointer to data
+pointer to end
+pointer to capacity end
+That is 3 pointers.
+
+Size calculation
+On 64-bit system:
+1 pointer = 8 bytes
+3 pointers = 24 bytes  
+
+vl a[N];   // N = 100000  
+Memory allocated immediately:
+100000 × 24 bytes = 2.4 MB              but Typical stack limit: // Linux: ~8 MB // Windows: ~1 MB       // 2.4 MB on stack = already dangerous
+
+
+//-----------------------vector<vector<ll>>v1(N)----------------------
+Only one vector object is on the stack.
+Stack:
+[ a ]  → 24 bytes  
+All internal vectors are allocated on the heap, which is huge.
+
+
+                     *** Note: vector<vector<ll>>v1(N) is safe even incide function      // but v1[N] is // safe when its global // when used incide fuction stack overflow happens
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+                       
+                       
+  
