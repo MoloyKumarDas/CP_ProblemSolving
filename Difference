@@ -31,10 +31,30 @@ All internal vectors are allocated on the heap, which is huge.
 
                      *** Note: vector<vector<ll>>v1(N) is safe even incide function      // but v1[N] is // safe when its global // when used incide fuction stack overflow happens
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------a[n]={0}--------vs--------a[n]={7}---------vs------a[n]---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+   
+    ll a[5] = {0};                          // just first index fixed as given value, remaing will be zero
+    for (ll i = 0; i < 5; i++)
+    {
+        cout << a[i] << " ";               // 0 0 0 0 0         // not means that, for {0} ,all become zero ,its just conincedect
+    }
 
 
+    ll a[5] = {7};                         // or a[5]={3}   // or a[5]={100}
+    for (ll i = 0; i < 10; i++)
+    {
+        cout << a[i] << " ";               // 7 0 0 0 0           // if first value initialized then remaing element will be auto initialized to zero 
+    }
 
+/*-----------vs-----------------*/
+    ll a[5];                               // just diclaration
+    for (ll i = 0; i < 5; i++)
+    {
+        cout << a[i] << " ";               // all value initially as garbaze
+    }
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
 
                        
                        
