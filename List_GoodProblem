@@ -277,6 +277,8 @@
 
 
 /*----------------------------------- optimization---reducde complexity------------------------------------------------------*/
+//1400 // educational round 186(div 2--(c)) *** // dp // reduce complexity   // implementation
+
 //1500 // codeforces round 1028(div 2--(c))    ** // bfs  or  // dynamic programing
 
 
