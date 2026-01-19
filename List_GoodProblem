@@ -314,6 +314,7 @@
 //1300 // pinely round5(div1+div2)--(c)) **  // observation & implementation  // two pointer
 //1300 // codeforces round 1053(div 2--(b)) ** // pure(just) implementation  // brain storming
 //1300 // codeforces round 1070(div 2--(c)) * // implementation // observation // little bit brain storming
+//1300 // codeforces round 1073(div 2--(c))  ** // be fast // 2pointer // read carefully // sequence ,not segment
 
 //1400 // codeforces Round 1055(div1+div2)--(c))   * // observation + implementation
 //1400 // educational Round 108(div 2--(c)  ** implementation  // operation on vector of vector  // be fast
