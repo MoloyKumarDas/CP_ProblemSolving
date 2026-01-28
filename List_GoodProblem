@@ -43,6 +43,7 @@
 //1000 // codechef starter Round 128 (div 4 -- (d))  // practice // sometimes  // substring
 //1000 // codechef starter Round 129 (div 4 -- (c))
 //1000 // codeforces Round 943 (div 3-- (d))
+//1100 // codeforces Round 1076(div 3--(d))  //brain storming // just understand the problem // question was tough to understand 
 
 
 //1100 // codeforces Round 941 (div 2-- (b))  // pattern //practice sometimes // make all the cell into same colour
@@ -74,6 +75,7 @@
 //1200 // codeforces round 966(div 3--(d))   // two pointer & prefix sum     // just for practice before interview for fast solve
 //1200 // codeforces round 955(div 2--(c))  // two pointer     // don't make it complex 
 //1200 // codeforces Round 1052(div 2--(c))  * binary search awareness // understand the statement clearly  
+
 
 
 /*-------1200 rating--------------- TLE ELIMINATOR ------------------------------------------------------------------*/
