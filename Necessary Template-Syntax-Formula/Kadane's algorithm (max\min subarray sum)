@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+// Function to find the maximum subarray sum
+int maxSubarraySum(vector<int> &arr) {
+    int res = arr[0];
+    int maxEnding = arr[0];
+    for (int i = 1; i < arr.size(); i++) {
+        maxEnding = max(maxEnding + arr[i], arr[i]);
+        res = max(res, maxEnding);
+    }
+    return res;
+    // // Function to find the minimum subarray sum
+    //     int minEnding = arr[0];
+    // for (int i = 1; i < arr.size(); i++) {
+    //     minEnding = min(minEnding + arr[i], arr[i]);
+    //     res = min(res, minEnding);
+    // }
+    // return res;
+}
+
+int main() {
+    // vector<int> arr = {2, 3, -8, 7, -1, 2, 3};
+    vector<int>arr;
+    for(int i=0;i<7;i++){
+        int x;
+        cin>>x;
+        arr.push_back(x);
+    }
+    cout << maxSubarraySum(arr);
+    return 0;
+}
