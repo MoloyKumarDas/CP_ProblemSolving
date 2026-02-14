@@ -182,7 +182,7 @@
 //1400 // codeforces Round 574(div 2--(c)) **** // dp 
 //1400 // codeforces Round 585(div 2--(b)) *** // dp // implementation // brain storming 
 //1400 // codeforces round 240(div 1--(b)) *** // dp & combination // practice for dp // brain storming for implementation
-
+//1400 // codeforces Round 1067(div 2--(c)) *** // dp // optimization // kadane's algo & suffix,prefix
 
 /*-------------------------------------mathematical or pattern ------------------------------------------------*/
 //1000 // codeforces round 1043(div 3--(b))  // math  // i made the logic complex instead of calculating the equation
@@ -333,6 +333,7 @@
 //1400 // codeforcs global round (div1+div2--(c)) *** observation & implementation
 //1400 // codeforces round 549(div 2--(c)) *** // dfs or without dfs // without dfs ,the implementation is lovely 
 //1400 // codeorces global round 30(div1+div2-(c)) *** // greedy // multiset practice // be fast on implementation
+//1400 // codeforces Round 1067(div 2--(c)) *** // dp // optimization // kadane's & suffix,prefix
 
 //1500 // codeforces Round 1056(div 2--(c))   *** deep observation & implementation         
 
