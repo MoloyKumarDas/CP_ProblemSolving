@@ -288,6 +288,7 @@
 //1400 // codeorces global round 30(div1+div2-(c)) *** // greedy // multiset practice 
 //1400 // codeforces round 1034(div 3--(E)) ***** // observation // implementation // dp
 //1400 // codeforces round 1027(div 2--(d)) ** // observation & implementation 
+//1400 // codeforces round 1083(div 2--(c)) ** // observation & implementation
 
 //1500 // codeforces round 1019(div 2 --(c))     ** // logic & implementation    // a little bit tricky
 //1500 // codeforces Round 994 (div 2 --(c))     ** // observation
@@ -344,6 +345,7 @@
 //1400 // codeforces Round 1067(div 2--(c)) *** // dp // optimization // kadane's & suffix,prefix
 //1400 // codeforces round 1034(div 3--(E)) ***** // observation // implementation // dp
 //1400 // codeforces round 1027(div 2--(d)) ** // observation & implementation 
+//1400 // codeforces round 1083(div 2--(c)) ** // observation & implementation
 
 //1500 // codeforces Round 1056(div 2--(c))   *** deep observation & implementation         
 
