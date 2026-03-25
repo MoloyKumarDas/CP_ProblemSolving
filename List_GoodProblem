@@ -173,6 +173,11 @@
 //1400 // codeforces round 240(div 1--(b)) *** // dp & combination // practice for dp // brain storming for implementation
 //1400 // codefroces global round 1(b)  // easy // but be fast // practice implementation quickly // understand quesion qucily
 
+/*-------------------------------------------------------1500 tle eliminator -------------------------------------------------------------*/
+
+//1500 // codeforces Round 907(div 2--(c)) ** // observation & implementation // be fast
+//1500 // codeforces Round 1016(div 3-- (e)) *** observation // binary search // implementation // be fast
+
 
 /*----------------------------------------------------graph & dp & tree----------------------------------------------------------*/
 //1300 // codeforces round 1051(div 2--(c))  *** observation & dfs\bfs
@@ -299,7 +304,7 @@
 //1500 // codeforces Round 994 (div 2 --(c))     ** // observation
 //1500 // codeforces round 1023(div 2 --(c))     ** // observation
 //1500 // codeforces Round 1056(div 2--(c))   *** deep observation & implementation
-//1500 // codeforces Round 1016(div 3-- (e)) *** observation // binary search // implementation // be fast
+
 
 /*-------------------------------------practice---common problem-----------------------------------------------------------*/
 
@@ -357,6 +362,7 @@
 //1500 // codeforces Round 1056(div 2--(c))   *** deep observation & implementation         
 //1500 // codeforces Round 1016(div 3-- (e)) *** observation // binary search // implementation // be fast
 //1500 // codeforces Round 918(div 4--(f)) ***** // common problem // ordered_set // buteforces optimization
+//1500 // codeforces Round 907(div 2--(c)) ** // observation & implementation // be fast
 
 //1200 // codeforces Round 1017(div 4-- (d))  *** // implementation
 //1200 // codeforces Round 975(div 2--(b)   
