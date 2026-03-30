@@ -178,7 +178,7 @@
 
 //1500 // codeforces Round 907(div 2--(c)) ** // observation & implementation // be fast
 //1500 // codeforces Round 1016(div 3-- (e)) *** observation // binary search // implementation // be fast
-
+//1500 // codeforces Round 903(div 3--(e)) **** // implementation // dp // common problem
 
 /*----------------------------------------------------graph & dp & tree----------------------------------------------------------*/
 //1300 // codeforces round 1051(div 2--(c))  *** observation & dfs\bfs
@@ -192,6 +192,7 @@
 //1400 // codeforces round 1034(div 3--(E)) ***** // dp // implementation // important observation
 //1400 // codeforces round 1027(div 3--(E)) **** // dfs // dp // observation &implementation 
 
+//1500 // codeforces Round 903(div 3--(e)) **** // implementation // dp // common problem
 
 
 /*-------------------------------------mathematical or pattern ------------------------------------------------*/
@@ -365,6 +366,7 @@
 //1500 // codeforces Round 1016(div 3-- (e)) *** observation // binary search // implementation // be fast
 //1500 // codeforces Round 918(div 4--(f)) ***** // common problem // ordered_set // buteforces optimization
 //1500 // codeforces Round 907(div 2--(c)) ** // observation & implementation // be fast
+//1500 // codeforces Round 903(div 3--(e)) **** // implementation // dp // common problem
 
 //1200 // codeforces Round 1017(div 4-- (d))  *** // implementation
 //1200 // codeforces Round 975(div 2--(b)   
