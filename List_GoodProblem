@@ -179,6 +179,7 @@
 //1500 // codeforces Round 907(div 2--(c)) ** // observation & implementation // be fast
 //1500 // codeforces Round 1016(div 3-- (e)) *** observation // binary search // implementation // be fast
 //1500 // codeforces Round 903(div 3--(e)) **** // implementation // dp // common problem
+//1500 // codeforces Round 895(div 3--(e)) ***** // observation // bit manipulation & xor 
 
 /*----------------------------------------------------graph & dp & tree----------------------------------------------------------*/
 //1300 // codeforces round 1051(div 2--(c))  *** observation & dfs\bfs
@@ -308,6 +309,7 @@
 //1500 // codeforces round 1023(div 2 --(c))     ** // observation
 //1500 // codeforces Round 1056(div 2--(c))   *** deep observation & implementation
 //1500 // codeforces Round 1087(div 2--(c)) *** observation & reduce complexity // interactive // brain storming 
+//1500 // codeforces Round 895(div 3--(e)) ***** // observation // bit manipulation & xor 
 
 /*-------------------------------------practice---common problem-----------------------------------------------------------*/
 
