@@ -181,6 +181,7 @@
 //1500 // codeforces Round 903(div 3--(e)) **** // implementation // dp // common problem
 //1500 // codeforces Round 895(div 3--(e)) ***** // observation // bit manipulation & xor 
 //1500 // educational codeforces Round 143(div 2--(c)) **** // implementation // optimization // partial sum & binary search // common
+//1500 // SWERC 2022-2023-Online Mirror --(L) *** // observation & math // lcm    // brain storming
 
 /*----------------------------------------------------graph & dp & tree----------------------------------------------------------*/
 //1300 // codeforces round 1051(div 2--(c))  *** observation & dfs\bfs
@@ -240,6 +241,9 @@
 //1400 // codeforces Round 1037(div 3--(E)) ** // math & observation // gcd
 //1400 // codeforces Round 1085(div1+div2)--(c)  ** // pattern & observation // implementation
 // 1400 // codeforces educational 188(div2--(c)) ** // math // gcd & lcm  // be fast
+
+
+//1500 // SWERC 2022-2023-Online Mirror --(L) *** // observation & math // lcm    // brain storming
 
 /*------------------------------------adhoc/observation--------------------------------------------------------------*/
 
