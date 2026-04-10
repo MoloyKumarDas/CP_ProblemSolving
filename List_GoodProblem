@@ -182,6 +182,7 @@
 //1500 // codeforces Round 895(div 3--(e)) ***** // observation // bit manipulation & xor 
 //1500 // educational codeforces Round 143(div 2--(c)) **** // implementation // optimization // partial sum & binary search // common
 //1500 // SWERC 2022-2023-Online Mirror --(L) *** // observation & math // lcm    // brain storming
+//1500 // codeforces Round 785div2-(c)) *** // dp 
 
 /*----------------------------------------------------graph & dp & tree----------------------------------------------------------*/
 //1300 // codeforces round 1051(div 2--(c))  *** observation & dfs\bfs
@@ -196,7 +197,7 @@
 //1400 // codeforces round 1027(div 3--(E)) **** // dfs // dp // observation &implementation 
 
 //1500 // codeforces Round 903(div 3--(e)) **** // implementation // dp // common problem
-
+//1500 // codeforces Round 785div2-(c)) *** // dp 
 
 /*-------------------------------------mathematical or pattern ------------------------------------------------*/
 //1000 // codeforces round 1043(div 3--(b))  // math  // i made the logic complex instead of calculating the equation
