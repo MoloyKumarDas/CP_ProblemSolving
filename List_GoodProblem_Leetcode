@@ -1,3 +1,4 @@
 
 /*---------------------------------------------------------------------------dynamic programing-------------------------------------------------------------------------------------
-118: Pascal's Triangle                 // little observation & be fast        // try dp // don't use simple bruteforce as input value is less
+118: Pascal's Triangle                           // little observation & be fast        // try dp // don't use simple bruteforce as input value is less
+1071: Greatest Common Divisor of Strings    **  // just for practicing substr operation  // also be fast
