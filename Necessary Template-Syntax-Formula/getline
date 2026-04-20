@@ -1,0 +1,36 @@
+input:
+2 3 5 1 3  // array   // don't know size
+3          // a interger
+
+output:
+2 3 4 1 3
+3
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+#include <bits/stdc++.h>
+#include <sstream>
+using namespace std;
+
+int main()
+{
+    vector<int> v1;
+    string line;
+    int x;
+
+    getline(cin, line);           // reads entire line of input as string
+    stringstream ss(line);        // converting string to string stream
+    while (ss >> x)               // extract integer from stream
+    {
+        v1.push_back(x);
+    }
+
+    int extra;
+    cin >> extra;
+
+    for (auto d : v1)
+        cout << d << " ";
+    cout << endl;
+    cout << extra;
+
+    return 0;
+}
