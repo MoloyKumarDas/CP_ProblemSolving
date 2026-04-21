@@ -34,3 +34,23 @@ int main()
 
     return 0;
 }
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+input: the sky is blue 
+output: the sky is blue               // if input taken by cin the output be: the
+
+/*-----------------------------------------------------*/
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s;
+    // cin >> s;
+    getline(cin, s);
+    cout << s;
+
+    return 0; // ha ha ha
+}
+
