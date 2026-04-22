@@ -1,0 +1,106 @@
+// 443. String Compression
+// 1st code snippet got wrong but 2nd code got accepted // 1st code loggically seems ok but not
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+class Solution
+{
+public:
+    int compress(vector<char> &chars)
+    {
+        // int ans = 0;
+        int len = chars.size();
+        if (len == 1)
+            return 1;
+        int cnt = 0;
+        int j = 0;
+        for (int i = 0; i < len; i++)
+        {
+            if (i != (len - 1))
+            {
+                cnt++;
+                if (chars[i] != chars[i + 1])
+                {
+                    string ss = to_string(cnt);
+                    // ans += 1;
+                    // if (cnt != 1)
+                    //     ans += ss.size();
+                    chars[j++] = chars[i];
+                    // j++;
+                    if (cnt != 1)
+                    {
+                        for (auto d : ss)
+                        {
+                            chars[j++] = d;
+                            // j++;
+                        }
+                    }
+                    cnt = 0;
+                }
+            }
+            else
+            {
+                if (chars[i] == chars[i - 1])                                            // contradict prev cnt defination // wrong point
+                {
+                    cnt++;
+                    string ss = to_string(cnt);
+                    // ans += 1 + ss.size();
+                    chars[j++] = chars[i];
+                    // j++;
+                    for (auto d : ss)
+                    {
+                        chars[j++] = d;
+                        // j++;
+                    }
+                }
+                else
+                {
+                    // ans += 1;
+                    chars[j++] = chars[i];
+                    // j++;
+                }
+            }
+        }
+        chars.resize(j);
+        for(auto d:chars)
+        cout<<d<<" "<<endl;
+        return j;
+    }
+};
+
+
+
+/*--------------------------------------------------------------------------vs--------------------------------------------------------------------------------*/
+class Solution
+{
+public:
+    int compress(vector<char> &chars)
+    {
+        int len = chars.size();
+        int j = 0;
+        int cnt = 1;
+        for (int i = 0; i < len; i++)
+        {
+            if (i < len - 1 && chars[i] == chars[i + 1])
+            {
+                cnt++;
+            }
+            else
+            {
+                chars[j++] = chars[i];
+                if (cnt > 1)
+                {
+                    string ss = to_string(cnt);
+                    for (char d : ss)
+                    {
+                        chars[j++] = d;
+                    }
+                }
+                cnt = 1;
+            }
+        }
+        // chars.resize(j);
+        // for(auto d:chars)
+        // cout<<d<<" ";
+        return j;
+    }
+};
