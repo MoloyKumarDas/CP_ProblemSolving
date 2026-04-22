@@ -1,5 +1,6 @@
 
 /*---------------------------------------------------------------------------dynamic programing-------------------------------------------------------------------------------------
 118: Pascal's Triangle                           // little observation & be fast        // try dp // don't use simple bruteforce as input value is less
-1071: Greatest Common Divisor of Strings    **  // just for practicing substr operation  // also be fast
-334:Increasing Triplet Subsequence          *   // be fast // remeber about heigest integer constraint: 2^31-1
+1071: Greatest Common Divisor of Strings    **   // just for practicing substr operation  // also be fast
+334: Increasing Triplet Subsequence          *   // be fast // remeber about heigest integer constraint: 2^31-1
+443: String Compression                      *   // be fast // implementation // aware about question
