@@ -35,6 +35,29 @@ int main()
     return 0;
 }
 
+/*-------------------------------------------------------------------------------------------------------------------*/
+input: a b c d
+output: a b c d 
+/*------------------------------------------------*
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s;
+    getline(cin, s);
+    stringstream ss(s);
+    vector<char> v1;
+
+    while (ss >> s)
+        v1.push_back(s[0]);                         // s[0] notice this
+
+    for (auto d : v1)
+        cout << d << " ";
+
+    return 0;
+}
+
 /*------------------------------------------------------------------------------------------------------------------*/
 
 input: the sky is blue 
