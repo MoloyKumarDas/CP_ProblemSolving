@@ -6,4 +6,6 @@
 443: String Compression                      *   // be fast // implementation // aware about question
 11: Container With Most Water                 *   // be fast // two pointer
 136: Single Number                                // be familir with condition 
+
 735: Asteroid Collision                     ***   // implementation // stack
+394: Decode String                         ****   // implementation // stack
