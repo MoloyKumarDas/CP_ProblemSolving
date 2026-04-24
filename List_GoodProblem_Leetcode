@@ -9,3 +9,16 @@
 
 735: Asteroid Collision                     ***   // implementation // stack
 394: Decode String                         ****   // implementation // stack
+
+
+
+
+
+
+
+
+/*-------------------------------------------------note-------------------------------------------------------------*/
+374. Guess Number Higher or Lower                  // binary search    // aware about overflow    // for int, use -> [ mid=l+(r-l)/2 ] instead of mid=(l+r)/2     // or conver all thing to long long
+
+
+
