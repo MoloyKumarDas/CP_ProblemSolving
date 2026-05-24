@@ -24,4 +24,34 @@
 
 /*-----------------------------------------------------------Linked List--------------------------------------------------------------*/
 2095:Delete the Middle Node of a Linked List      * // solved my own // but just reduce complexity -> fast & slow approach 
-         
+
+
+
+/*---------------------------------------------------------------sql----------------------------------------------------------------------*/
+
+                      /*------------------------------------------join----------------------------------------*/
+1581.Customer Who Visited but did not ....         *      
+197. Rising Temperature                            *      // two table from one table //  date_add() method
+1661. Average Time of Process per Machine          *      // multiple condition after join 
+1280. Students and Examinations                    **     // 3 table  // cross join
+1934. Confirmation Rate                            *      // use of if condition
+
+
+                      /*-------------------------------------------aggregate function-----------------------------*/
+1251. Average Selling Price                        ***    // ifnull, sum, between
+1633. Percentage of Users Attended a Contest       **     // aware when count total user_id // after join use raw table to count 
+
+
+
+
+/*----------------------------------------------------------------sql topic reminder------------------------------------------------------------------------*/   
+                                                                         
+-> Is null , is not null  // invalid: x !=null
+-> Distinct
+-> Length(…)
+-> Join == inner join     // by default
+-> round (…., 3)
+-> mod                   // % also allowed  
+->  <>                   // != also allowed
+-> ifnull(a,b) 
+-> having                // after group by // don't use where after group by
