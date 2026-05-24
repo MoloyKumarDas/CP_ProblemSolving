@@ -40,6 +40,7 @@
                       /*-------------------------------------------aggregate function-----------------------------*/
 1251. Average Selling Price                        ***    // ifnull, sum, between
 1633. Percentage of Users Attended a Contest       **     // aware when count total user_id // after join use raw table to count 
+1211. Queries Quality and Percentage                      // just for practice 
 
 
 
@@ -53,5 +54,5 @@
 -> round (…., 3)
 -> mod                   // % also allowed  
 ->  <>                   // != also allowed
--> ifnull(a,b) 
+-> ifnull(a,b)           // if a==b return a otherwise return b 
 -> having                // after group by // don't use where after group by
