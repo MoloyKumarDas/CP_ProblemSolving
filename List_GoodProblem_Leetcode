@@ -41,6 +41,9 @@
 1251. Average Selling Price                        ***    // ifnull, sum, between
 1633. Percentage of Users Attended a Contest       **     // aware when count total user_id // after join use raw table to count 
 1211. Queries Quality and Percentage                      // just for practice 
+1193. Monthly Transactions I                       **     // left // sum with condition
+1174. Immediate Food Delivery II                          // just for practice
+550. Game Play Analysis IV                         ***    // unclear question
 
 
 
@@ -56,3 +59,4 @@
 ->  <>                   // != also allowed
 -> ifnull(a,b)           // if a==b return a otherwise return b 
 -> having                // after group by // don't use where after group by
+left(current_date,7)     // extract YYYY-MM from YYYY-MM-DD
