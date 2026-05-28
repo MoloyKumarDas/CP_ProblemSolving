@@ -41,6 +41,12 @@
 3.Longest Substring Without Repeating Characters  *   // aware on edge cases // just for practice 
 
 
+/*-----------------------------------------------------------stack------------------------------------------------------------------------*/
+71. Simplify Path                                ***  // stringstream 
+155. Min Stack                                   **   // question pattern          // stack & vector of vector -> both possible
+150. Evaluate Reverse Polish Notation            *    // polish notation
+
+
 
 /*---------------------------------------------------------------sql----------------------------------------------------------------------*/
 
