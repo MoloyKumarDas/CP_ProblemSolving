@@ -17,7 +17,7 @@
 875.Koko Eating Bananas                           // be fast // just for practice // catch instant when see question 
 
 
-/*-------------------------------------------------note-------------------------------------------------------------*/
+/*----------------------------------------------------------note-------------------------------------------------------------*/
 374. Guess Number Higher or Lower                  // binary search    // aware about overflow    // for int, use -> [ mid=l+(r-l)/2 ] instead of mid=(l+r)/2     // or conver all thing to long long
 
 
@@ -43,6 +43,11 @@
 1004. Max Consecutive Ones III                    **
 1493. Longest Subarray of 1's                     ***
 3.Longest Substring Without Repeating Characters  *   // aware on edge cases // just for practice 
+
+
+
+/*------------------------------------------------------kadane's algo-----------------------------------------------------------------------*/
+918. Maximum Sum Circular Subarray                **     // be fast    // handle edge case
 
 
 /*-----------------------------------------------------------stack------------------------------------------------------------------------*/
