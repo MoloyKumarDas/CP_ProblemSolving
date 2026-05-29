@@ -32,6 +32,10 @@
 2215. Find the Difference of Two Arrays                 // be fast  // set & count
 1657. Determine if Two Strings Are Close           ***   
 2352. Equal Row and Column Pairs                   **   // be fast  // just for practice
+205. Isomorphic Strings                            **   // a little bit brain storming
+49. Group Anagrams                                      // be fast // just for practice
+1. Two Sum                                         *
+202. Happy Number                                  **   // brain storming 
 
 
 /*--------------------------------------------------------sliding window----------------------------------------------------------------*/
