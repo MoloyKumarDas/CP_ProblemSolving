@@ -19,6 +19,10 @@
 
 /*----------------------------------------------------------note-------------------------------------------------------------*/
 374. Guess Number Higher or Lower                  // binary search    // aware about overflow    // for int, use -> [ mid=l+(r-l)/2 ] instead of mid=(l+r)/2     // or conver all thing to long long
+88. Merge Sorted Array                            // read the problem carefully   // practice using two pointer                  
+27. Remove Element                            *   // read carefully  // understand what is wanted as output // also practice the code 
+121. Best Time to Buy and Sell Stock          **  // adhoc // be fast
+
 
 
 
