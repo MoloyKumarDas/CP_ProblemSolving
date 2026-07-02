@@ -19,9 +19,17 @@
 
 /*----------------------------------------------------------note-------------------------------------------------------------*/
 374. Guess Number Higher or Lower                  // binary search    // aware about overflow    // for int, use -> [ mid=l+(r-l)/2 ] instead of mid=(l+r)/2     // or conver all thing to long long
+
+
+/*-------------------------------------------------------------array/string-------------------------------------------------------------------------*/
 88. Merge Sorted Array                            // read the problem carefully   // practice using two pointer                  
 27. Remove Element                            *   // read carefully  // understand what is wanted as output // also practice the code 
 121. Best Time to Buy and Sell Stock          **  // adhoc // be fast
+122. Best Time to Buy and Sell Stock II       *   // practice sometimes
+189. Rotate Array                            **   // try without using another vector  
+13. Roman to Integer                        ***   // be fast // implementation & little observation
+
+
 
 
 
