@@ -28,6 +28,8 @@
 122. Best Time to Buy and Sell Stock II       *   // practice sometimes
 189. Rotate Array                            **   // try without using another vector  
 13. Roman to Integer                        ***   // be fast // implementation & little observation
+55. Jump Game                                     // be fast
+45. Jump Game II                            **    // observation
 
 
 
