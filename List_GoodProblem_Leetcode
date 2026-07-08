@@ -28,9 +28,12 @@
 122. Best Time to Buy and Sell Stock II       *   // practice sometimes
 189. Rotate Array                            **   // try without using another vector  
 13. Roman to Integer                        ***   // be fast // implementation & little observation
+12. Integer to Roman                        ***   // observation & implementation     // read prolem statement carefully and clearly
 55. Jump Game                                     // be fast
 45. Jump Game II                            **    // observation
 274. H-Index                                **    // understand question clearly // implementation
+14. Longest Common Prefix                         // be fast   // string
+380. Insert Delete GetRandom O(1)           ****  // one vector and one unoredered_map for index  // The Swap Trick That reduce complexity for removal  // use of rand() 
 
 
 
