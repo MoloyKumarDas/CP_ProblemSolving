@@ -34,8 +34,9 @@
 274. H-Index                                **    // understand question clearly // implementation
 14. Longest Common Prefix                         // be fast   // string
 380. Insert Delete GetRandom O(1)           ****  // one vector and one unoredered_map for index  // The Swap Trick That reduce complexity for removal  // use of rand() 
-
-
+134. Gas Station                            *** // don't think logic with the equation of explanation
+28. Find the Index of the First Occurrence in a String        * // practice dirrect approach(find)
+6. Zigzag Conversion                        *** // implementation
 
 
 
