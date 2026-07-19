@@ -40,6 +40,12 @@
 
 
 
+/*--------------------------------------------------------two pointer--------------------------------------------------------------*/
+125. Valid Palindrome                       **   // be fast // use of isalnum(),tolower()
+167. Two Sum II - Input Array Is Sorted     *    // try 2 pointer // another approach also works
+15. 3Sum                                   ****  // reduce from n^3 to O(n^2)  // i, (j→....←k)
+
+
 
 /*-----------------------------------------------------------Linked List--------------------------------------------------------------*/
 2095:Delete the Middle Node of a Linked List      * // solved my own // but just reduce complexity -> fast & slow approach 
