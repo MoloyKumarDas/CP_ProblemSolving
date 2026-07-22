@@ -46,6 +46,10 @@
 15. 3Sum                                   ****  // reduce from n^3 to O(n^2)  // i, (j→....←k)
 
 
+/*----------------------------------------------------------Intervals----------------------------------------------------------------*/
+228. Summary Ranges                           ** // implementation 
+56. Merge Intervals                              // be fast // implementation
+
 
 /*-----------------------------------------------------------Linked List--------------------------------------------------------------*/
 2095:Delete the Middle Node of a Linked List      * // solved my own // but just reduce complexity -> fast & slow approach 
