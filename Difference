@@ -60,6 +60,22 @@ All internal vectors are allocated on the heap, which is huge.
 
 if(nums[j + 1] == nums[j] + 1) {.....}        // safe 
 if(nums[j + 1] - nums[j] ==1) { .....}        // unsafe // got error for this // 0 - (-2147483648)  overflows   
-                       
-                       
-  
+
+/*-----------------------------------------------------------------------when use [ ch-'0' ]------------------------------------------------------------------------------------------------*/
+
+// 1. Converting a digit character to its numeric value                       
+char ch = '7';
+int num = ch - '0';   // num = 7        // 55- 48 = 7     
+
+
+// 2.Getting the ASCII value of a character // don't use like above
+char ch = 'a';
+int ascii = ch;        // 97                     // int x = ch - '0'; // 97 - 48 = 49   // Incorrect if you wanted the ASCII value
+// or
+int ascii = (int)ch;
+
+
+// 3. Converting letters to alphabet indices
+char ch2 = 'c';
+int idx2 = ch2 - 'a';  // 2
+
