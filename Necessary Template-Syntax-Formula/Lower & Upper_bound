@@ -7,7 +7,7 @@ ll value = lower_bound(v2.begin(), v2.end(), val);
                         //  lower bound value for 6: 6        lower value index for 6: 3
 
 // upper bound of a value: first value that is stricly greater
-// 2 4 5 6 6 7         // upper bound value for 6: 7          upper value index for 6: 4
+// 2 4 5 6 6 7         // upper bound value for 6: 7          upper value index for 6: 5
 
 
 
