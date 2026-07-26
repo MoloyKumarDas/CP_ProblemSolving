@@ -50,6 +50,7 @@
 228. Summary Ranges                           ** // implementation 
 56. Merge Intervals                              // be fast // implementation
 57. Insert Interval                          *** // implementation // be fast     // easy implementation by v.back()[1]
+435. Non-overlapping Intervals                   // aware -> just one thing
 
 
 /*-----------------------------------------------------------Linked List--------------------------------------------------------------*/
