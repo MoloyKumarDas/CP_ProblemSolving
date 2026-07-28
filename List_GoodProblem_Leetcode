@@ -87,6 +87,15 @@
 435. Non-overlapping Intervals                   // aware -> just one thing
 
 
+
+/*-------------------------------------------------------------math-------------------------------------------------------------------------*/
+66. Plus One                                  * // be fast  // remember the use of v.insert(v.begin()+pos,val);
+69. Sqrt(x)                                  ** // try withouth sqrt // try binary search
+50. Pow(x, n)                              **** // optimization & implementation
+172. Factorial Trailing Zeroes              *** // observation 
+
+
+
 /*-----------------------------------------------------------Linked List--------------------------------------------------------------*/
 2095:Delete the Middle Node of a Linked List      * // solved my own // but just reduce complexity -> fast & slow approach 
 
