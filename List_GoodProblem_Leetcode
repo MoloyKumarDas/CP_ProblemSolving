@@ -44,6 +44,14 @@
 33. Search in Rotated Sorted Array          ***   // implementation
 
 
+
+/*--------------------------------------------------------------bit manipulation-------------------------------------------------------------*/
+67. Add Binary                                  * // be fast
+137. Single Number II                        **** // try the best approach O(n)  // learned new technique
+201. Bitwise AND of Numbers Range             *** // aware about constraints: already given 10^9 , if we apply 32*n then time limit // important concept/obsrveation // equal prefix  
+
+
+
 /*----------------------------------------------------------hash map/ sets-------------------------------------------------------------*/
 2215. Find the Difference of Two Arrays                 // be fast  // set & count
 1657. Determine if Two Strings Are Close           ***   
