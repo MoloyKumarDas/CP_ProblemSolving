@@ -1,0 +1,72 @@
+//class Pen {
+//    String colour;
+//    String type;
+//
+//    public void write() {
+//        System.out.println("writing");
+//    }
+//
+//    public void printColour() {
+//        System.out.println(this.colour);
+//    }
+//}
+
+class Student {
+    String name;
+    int age;
+
+    public void printInfo() {
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
+
+//    Student(){                            // no parameterised constructor   // by default it is made // so, we don't create it then also it works fine
+//        System.out.println("constructor called");
+//    }
+
+//    Student(String name,int age){        // parameterised constructor
+//        this.name=name;
+//        this.age=age;
+//    }
+
+    Student(Student s2) {                 // copy constructor
+        this.name = s2.name;
+        this.age = s2.age;
+    }
+
+    Student() {                           // for copy constructor, for s1, as now not by default
+
+    }
+}
+
+public class OOPS {
+    public static void main(String args[]) {
+
+//        Pen pen1 = new Pen();
+//        pen1.colour = "blue";
+//        pen1.type = "jel";
+//
+//        //pen1.write();
+//        Pen pen2 = new Pen();
+//        pen2.colour = "black";
+//        pen2.type = "ball";
+//
+//        pen1.printColour();
+//        pen2.printColour();
+//
+//
+//        Student student = new Student();                // for no parameterized constructor
+//        student.name = "Das";
+//        student.age = 26;
+//        student.printInfo();
+
+
+//        Student s1=new Student("aman",28);              // for parameterized constructor
+
+        Student s1 = new Student();
+        s1.name = "aman";
+        s1.age = 29;
+        Student s2 = new Student(s1);                     // for copy constructor
+        s2.printInfo();
+    }
+}
