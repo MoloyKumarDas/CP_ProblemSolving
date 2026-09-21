@@ -1,0 +1,37 @@
+// compile time polymorphism: occurs when multiple methods in the same class
+// share the exact same name but have different parameter lists
+// (different number, type, or order of arguments)  ---> decision rule -> if rules contradict then get error at compile time
+
+
+
+class Student {
+    String name;
+    int age;
+
+    public void printInfo(String name) {
+        System.out.println(name);
+    }
+
+    public void printInfo(int age) {                           // polymorphism -> same method name
+        System.out.println(age);                               // previously used String as a parameter  
+                                                               // if again used just String as a parameter then break decision rule and will get compiler error
+    }
+
+    public void printInfo(String name, int age) {              // polymorphism
+        System.out.println(name + " " + age);
+    }
+
+}
+
+public class OOPS {
+    public static void main(String args[]) {
+
+        Student s1 = new Student();
+        s1.name = "kumar";
+        s1.age = 25;
+
+        s1.printInfo(s1.name);
+        s1.printInfo(s1.age);
+        s1.printInfo(s1.name, s1.age);
+    }
+}
