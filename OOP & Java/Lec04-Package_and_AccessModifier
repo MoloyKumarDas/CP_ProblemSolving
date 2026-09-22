@@ -1,0 +1,34 @@
+// package: a mechanism used to group related classes, interfaces, enumerations, and sub-packages together.
+//          Avoid naming conflict, maintainablity becomes easier(grouped logically)
+//import java.util.*;       // built in -> java.lang , java.io
+
+
+package bank;              // optional  // already Bank.java is under bank package
+// import oops.*;         // .* -> to access full package  // for specefic file, use->  import oops.polymorphism;
+
+
+class Account {
+    public String name;                  // public access modifier
+    // String name;                      // default access modifier
+    protected String email;              // protected       // accessible for this package // for other packages, accessible for subclass
+
+    private String password;             // private         // accessible for just this class
+    public String getPassword() {        // to access private class within main function, getter & setter is used
+        return this.password;
+    }
+    public void setPassword(String pass) {           // here, instead public we can also use private if we don't want user to set password
+        this.password = pass;
+    }
+
+}
+
+public class Bank {
+    public static void main(String[] args) {
+        Account account1 = new Account();
+        account1.name = "customer1";
+        account1.email = "curstomer1@gmail.com";
+
+        account1.setPassword("abcd");                  // if setPassword is private then this will not work
+        System.out.println(account1.getPassword());
+    }
+}
