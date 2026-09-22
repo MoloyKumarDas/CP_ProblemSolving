@@ -1,0 +1,41 @@
+
+class Shape {
+    //    String colour;
+    public void Area() {
+        System.out.println("displays area");
+    }
+}
+
+class Triangle extends Shape {                            // single level inheritance
+    public void Area(int l, int h) {
+        System.out.println(1.0 / 2 * l * h);
+    }
+}
+
+class EquilateralTriangle extends Triangle {              // multilevel inheritance
+    public void Area(int l, int h) {
+        System.out.println(1.0 / 2 * l * h);
+    }
+
+    class Circle extends Shape {                                // hierarchial inheritance  // Triangle and Circle both extends Shape
+        public void Area(int r) {
+            System.out.println(3.14 * r * r);
+        }
+    }
+}
+
+
+public class OOPS {
+    public static void main(String args[]) {
+
+//        Triangle t1=new Triangle();
+//        t1.colour="green";
+
+        Triangle t = new Triangle();
+        t.Area(6, 8);
+
+        EquilateralTriangle et = new EquilateralTriangle();
+        et.Area(6, 8);
+
+    }
+}
