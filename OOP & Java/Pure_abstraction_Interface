@@ -1,0 +1,37 @@
+// interface: every variable by default->public, static, final
+//            don't have constructor/instance
+// interface contains only abstract methods         // pure abstraction
+// but, abstract class: can contain both abstract & concrete methods     // partial abstraction
+
+
+interface Animal {
+    void walk();                  // within interface -> by default - public
+
+//    Animal(){ }                 // within interface,constructor can't be present // it will get error
+
+//    void eat(){ }               // within interface, non-abstract function can't be present/implement   // but in modern java, interfaces can have default and static methods with implementations
+
+}
+
+interface Herbivore {
+    void eatGrass();              // got error until we implement it anywhere
+}
+
+class Horse implements Animal, Herbivore {                  // multiple inheritance by interface
+    public void walk() {
+        System.out.println("walk on 4 legs");
+    }
+
+    public void eatGrass() {
+        System.out.println("eat grass");
+    }
+}
+
+public class OOPS {
+    public static void main(String args[]) {
+
+        Horse horse = new Horse();
+        horse.walk();
+        horse.eatGrass();
+    }
+}
