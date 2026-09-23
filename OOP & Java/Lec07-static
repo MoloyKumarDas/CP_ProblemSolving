@@ -1,0 +1,40 @@
+// When you declare something as static, memory is allocated only once
+// when the class is loaded, and all instances of the class share that single copy.
+
+// Normally, a non-static method needs an object  // the method belongs to a particular object.
+// static-> methods belongs to the class (not object)
+
+
+// JVM needs a method that it can call directly through the class, without creating an object.      // jvm needs a known entry point
+// static allows the JVM to call main() without creating an object of your class.                   // static main() provides that entry point
+// public static void main(String args[])         // Main.main()
+
+
+
+class Student {
+    String name;       // non static
+    static String school;                            // uses of static
+
+    public static void changeSchool() {              // uses of static with function
+        school = "new school";
+    }
+}
+
+
+public class OOPS {
+    public static void main(String args[]) {
+
+        Student.school = "HM";                        // update becomes easy
+                                                      // changes here, changes the all student's school name
+                                                      // we don't have to change each student's school name seperately
+        Student student1 = new Student();
+        student1.name = "das";     // non-static uses object
+
+        System.out.println(student1.school);
+
+        student1.changeSchool();                     // use of static function
+        System.out.println(student1.school);
+        Student student2 = new Student();
+        System.out.println(student2.school);
+    }
+}
