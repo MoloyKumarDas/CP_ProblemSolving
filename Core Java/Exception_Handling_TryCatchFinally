@@ -1,0 +1,28 @@
+// it is preffered to use finally block to close connection/file 
+
+package exceptionHandling;
+
+public class FinallyBlockInException {
+    public static void main(String[] args) {                       // shortcut-> try psvm and hit
+
+        int a[] = new int[5];
+
+        System.out.println("hello");
+
+        try {
+            System.out.println(a[8]);
+        }
+        catch (Exception e) {
+            System.out.println("all exception handled");
+        }
+        finally {               // always run  // if print a[3] -> no exception but finally block will run      // it will also work without catch , if exception occurred then terminated after running finally block
+                                // but may don't run when System.exit() used, it terminates program instantly // may be finally block don't run at that time
+                                // don't run when exception occurs in finally block
+                                // don't run when death of a thread
+
+            System.out.println("i will always run");
+        }
+        
+        System.out.println("bye3");
+    }
+}
