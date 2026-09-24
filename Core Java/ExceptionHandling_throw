@@ -1,0 +1,48 @@
+// throw keyword is used to explicitly throw a single exception
+// can throw both built in ,or custom exception
+
+package exceptionHandling;
+import java.util.*;
+
+public class CustomException {
+
+//    public static void main(String[] args) throws MyException {            // option (i)-> throws for custom exception
+//
+//        Scanner sc=new Scanner(System.in);
+//        System.out.println("enter age");
+//
+//        int age=sc.nextInt();
+//        if(age>100){
+//             throw new MyException("my error is this");            // this will get error and when keep cursor, it will show 2 option. (i) throws (ii) try-catch
+//
+//        }
+//        sc.close();              // it's good practice   // closes the Scanner object and releases the resource it is using.
+                                                           // but it also closes System.in -> so be careful when we need System.in later
+//    }
+
+
+public static void main(String[] args)  {                  // option (ii)-> throws for custom exception
+
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter age");
+
+    int age=sc.nextInt();
+    try {
+        if (age > 100) {
+            throw new MyException("my error is this");            // this will get error and when keep cursor, it will show 2 option. (i) throws (ii) try-catch
+//            throw new ArithmeticException("age more then 100 not allowed");           // built in exception
+//            throw new ArithmeticException();                    // just exception will throw // msg will not show as no msg is passed
+        }
+    }
+    catch (Exception e){                        // if used ArithmeticException/others then get error
+        System.out.println(e);
+    }
+}
+}
+
+// custom Exception
+class MyException extends Exception{             // when building custom exception then we have to use -> extend Exception
+public MyException(String message){       // when go to the Exception class, we can find out that there is a method to show msg named MyException  // so created this constructor
+    super(message);
+}
+}
