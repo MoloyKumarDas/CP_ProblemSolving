@@ -1,0 +1,25 @@
+// use the throws keyword in the method declaration
+// to declare the type of exceptions that might occur within it
+
+package exceptionHandling;
+
+public class FinallyBlockInException {
+    public static void main(String[] args) {                      
+
+        int a[] = new int[5];
+
+
+        // for throws
+        try {
+            getNumberFromArray(a);
+        } catch (Exception e) {
+            System.out.println("catched the exception" + e.getMessage());
+        }
+    }
+
+// if throws and try catch would not been used, error will show
+// we have to read error from bottom to top -> stored in stack  -> top will be the root cause
+    static int getNumberFromArray(int a[]) throws ArithmeticException {        // try catch will work without throws // but it is good practice to use throws to get know the error
+        return a[8];
+    }
+}
