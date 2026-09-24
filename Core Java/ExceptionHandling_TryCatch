@@ -1,0 +1,63 @@
+public class MainClass {
+    public static void main(String[] args) {
+
+        int a[] = new int[5];
+
+        System.out.println("hello");
+
+//        System.out.println(a[8]);                     // program will terminate here if we don't use try-catch
+//        System.out.println("bye");                    // this will not show if try catch not used // terminate before this
+
+        try {
+            System.out.println(a[8]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("tried to access out of bound element");
+        }
+        System.out.println("bye");
+
+
+
+
+//Multiple exception Handling
+        try {
+            int result = 5 / 0;                             // if we only use try catch for OutOfBound(below line) then this will terminate the program  // so we have to handle this also -> multiple exception handling
+            System.out.println(a[8]);
+//            int result=5/0;                              // it will not execute   // terminate before this // so don't need exception for this line
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("tried to access out of bound element");
+        }
+        catch (ArithmeticException e) {
+            System.out.println(e.getStackTrace());
+            System.out.println(e.getMessage());
+            System.out.println(e);                         // or e.toString(); // same  // unnecessary
+        }
+        catch (RuntimeException e) {
+            System.out.println("runtime exception");
+        }
+        System.out.println("bye2");
+
+
+
+
+// all exception handling
+        try {
+            int result = 5 / 0;
+            System.out.println(a[8]);
+        }
+//        // learning about or( | )
+//        catch (ArrayIndexOutOfBoundsException | ArithmeticException | NullPointerException e){           // just checking exception // not checking which exception
+//            System.out.println("handling exception");
+//        }
+
+        // Exception is the parent of all exception like ArrayIndexOutOfBoundsException
+        // if we press ctrl and then keep cursor on any exception(ArrayIndexOut....) then created a link , if we click then find out the parent(extended)
+
+        catch (Exception e) {        // this can handle all exception   // use it when we don't need to know the specific exception
+            System.out.println("all exception handled");
+        }
+        System.out.println("bye3");
+
+
+    }
+}
