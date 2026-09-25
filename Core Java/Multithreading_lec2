@@ -1,0 +1,47 @@
+package multitThreading;
+
+public class Example1 {
+
+    public static Object sharedObject=new Object();
+
+    public static void main(String[] args) {
+
+        System.out.println("main threat started");
+
+        Runnable objRunnable1 = () -> {
+            System.out.println("thread 1 started");
+            int runnable1=0;              // just thread1 can access this local variable // thread2 can't access // java memory model
+            System.out.println(Thread.currentThread().getName());
+            System.out.println(Thread.currentThread().getState());
+            System.out.println(sharedObject.hashCode());
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.println("thread 1 completed");
+        };
+
+        Runnable objRunnable2 = () -> {
+            System.out.println("thread 2 started");
+            int runnable2=0;
+            System.out.println(Thread.currentThread().getName());
+            System.out.println(Thread.currentThread().getState());
+            System.out.println(sharedObject.hashCode());
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.println("thread 2 completed");
+        };
+
+        Thread thread1 = new Thread(objRunnable1, "runnable thread1");
+        thread1.start();
+
+        Thread thread2 = new Thread(objRunnable2, "runnable thread2");
+        thread2.start();
+
+        System.out.println("main thread ended");          // main thread would not wait for thread1  // thread1.start() is being called but it will not execute instantly
+    }
+}
