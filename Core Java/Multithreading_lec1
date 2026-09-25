@@ -1,0 +1,51 @@
+package multitThreading;
+
+//class MyThread extends Thread{                   // not recommended
+//    public void run(){
+//        System.out.println("thread 1 running");
+//    }
+//}
+
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Example1 {
+    public static void main(String[] args) {
+
+//        MyThread thread1=new MyThread();
+//        thread1.start();
+
+        Thread thread2 = new Thread(() -> {                 // this also not efficient  // lambda expression
+            System.out.println("thread 2 running");
+        });
+        thread2.start();
+
+
+//        Runnable objRunnable = new Runnable() {           // at below, not using new keyword , instead using lambda expression
+//            @Override
+//            public void run() {
+//                System.out.println("thread 3 running");
+//            }
+//        };
+        Runnable objRunnable = () -> {
+                                  // Runnable -> function interface   // function interface work best with lambda expression
+                                  // if we see in Runnable interface then we can see that there exist a run abstract method
+//          System.out.println("thread 3 running");
+
+//trying various thing
+            System.out.println("thread 3 started");
+            System.out.println(Thread.currentThread().getName());
+            System.out.println(Thread.currentThread().getState());
+            try {
+                Thread.sleep(2000);              // for sleep method, we have to handle try-catch exception
+                // main thread still running until this thread completed  // 2s
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.println("thread 3 completed");          // thread3 will not complete when used setDemon(true) // below
+        };
+        Thread thread3 = new Thread(objRunnable, "runnable thread");
+        thread3.setDaemon(true);                               // when we don't want main thread to wait for other thread
+        thread3.start();
+        System.out.println("main thread ended");
+    }
+}
