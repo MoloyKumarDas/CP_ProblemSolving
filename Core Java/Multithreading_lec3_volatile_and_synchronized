@@ -1,0 +1,57 @@
+// when running while loop for thread2 , register normally takes value from cache2
+// but because of volatile keyword , register of thread2 directly taking value from main memory as soon as required value updated(as soon as catch1 updated by thread1 -> main memory updated)
+// also learned about java memory model
+
+package multitThreading;
+
+class SharedResource{
+
+    private volatile boolean flag=false;                 // visibility problem resolved by volatile keyword
+                                                         // if volatile is not used then thread 2 logic will not complete
+                                                         // flag remain false and stuck into while loop -> visibility problem
+    public void setFlag(boolean flag){
+        this.flag=flag;
+    }
+//    public synchronized void setFlag(boolean flag){             // we can also use synchronized keyword instead of volatile
+//        this.flag=flag;
+//    }
+
+    public boolean getFlag(){
+        return flag;
+    }
+//    public  synchronized boolean getFlag(){
+//        return flag;
+//    }
+}
+
+public class Volatile_Keyword {
+    public static void main(String[] args) {
+
+        SharedResource sharedResource=new SharedResource();
+
+        // thread 1
+        new Thread(()->{
+            System.out.println("thread 1 started");
+            try{
+              System.out.println("thread 1 logic started");
+              Thread.sleep(1000);
+              System.out.println("Thread 1 logic completed");
+              sharedResource.setFlag(true);
+              System.out.println("flag set by thread 1");
+            }
+            catch (InterruptedException e){
+                e.printStackTrace();
+            }
+        }).start();
+
+        // thread 2
+        new Thread(()->{
+            System.out.println("thread 2 started");
+            while(!sharedResource.getFlag()){
+                // it will run until flag value is true
+            }
+            System.out.println("thread 2 logic completed");               // it will not print/execute if volatile keyword is not used when declared flag
+                                                                          // alternative way of volatile is synchronized keyword
+        }).start();
+    }
+}
