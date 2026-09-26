@@ -1,0 +1,54 @@
+package multitThreading;
+
+public class ThreadLocalDemo {
+    public static void main(String[] args) {
+
+        ThreadLocal<Long> userId=new ThreadLocal<>();
+
+        // suppose a user landing on webpage
+        Long userId1=12345L;
+        Long userId2=56789L;
+
+        // handle the request in a new thread
+        Thread reqThread1=new Thread(()->{
+            System.out.println("started thread for "+userId1);
+            userId.set(userId1);
+            // process my logic
+            // database call
+//            System.out.println("completed logic for "+userId1);
+            System.out.println("completed logic for "+userId.get());
+            userId.remove();     // good practice to remove threadlocal object
+            System.out.println("removed "+ userId.get());
+        });
+
+        Thread reqThread2=new Thread(()->{
+            System.out.println("started thread for "+userId2);
+            userId.set(userId2);
+            // process my logic
+            // database call
+//            System.out.println("completed logic for "+userId2);
+            System.out.println("completed logic for "+userId.get());
+            userId.remove();     // good practice to remove threadlocal object
+            System.out.println("removed "+ userId.get());
+        });
+
+        reqThread1.start();
+        reqThread2.start();
+
+
+// here child can inherit from parent
+        InheritableThreadLocal<String>inheritableUserId=new InheritableThreadLocal<>();
+
+        Thread objthread3=new Thread(()->{
+            inheritableUserId.set("Instagram");
+            userId.set(12345L);        // not visible to child as it is threadlocal
+            Thread objThread4=new Thread(()->{
+                System.out.println(inheritableUserId.get());
+                System.out.println(userId.get());
+            });
+
+            objThread4.start();
+        });
+        objthread3.start();
+    }
+}
