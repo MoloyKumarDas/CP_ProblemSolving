@@ -1,0 +1,66 @@
+// volatile: handle visibility problem
+//           Everyone sees the latest value   // Good for a simple shared flag
+
+// atomic: Safely modify one shared value
+//         Multiple threads can safely (increment) it without losing updates.
+//         leverage hardware support
+
+// synchronize : ensures mutual exclusion
+//               Only one thread enters this critical section      //  Protect a whole piece of code
+//               Use it when several operations must happen together.          // send money -> one's balance will increase -> other balance will decrease
+
+
+// Happens-Before concept    // also learned about this
+
+
+package multitThreading;
+
+import java.util.concurrent.atomic.AtomicInteger;
+
+class SharedCounter {
+    //    private int count;
+    private AtomicInteger count = new AtomicInteger(0);                        // this handle race condition
+
+    //    public synchronized void increment(){                                         // synchronized also handles race condition // lock based -> ensures mutual exclusion // slower than atomic
+    public void increment() {                                                           // there are a various ways to use synchronized // here, used just one way
+//    count++;
+        count.incrementAndGet();                                                        // changed here also
+    }
+
+    public int getCount() {
+//        return count;
+        return count.get();                                                              // changed here also
+    }
+}
+
+public class Atomic {
+    public static void main(String[] args) throws InterruptedException {
+
+        SharedCounter sharedCounter = new SharedCounter();
+
+        Thread t1 = new Thread(() -> {
+            System.out.println("thread 1 started");                                        // short form: sout -> typing this press enter
+            for (int i = 0; i < 50000; i++) {
+                sharedCounter.increment();
+            }
+            System.out.println("thread 1 completed");
+        });
+
+        Thread t2 = new Thread(() -> {
+            System.out.println("thread 2 started");
+            for (int i = 0; i < 50000; i++) {
+                sharedCounter.increment();
+            }
+            System.out.println("thread 2 completed");
+        });
+
+        t1.start();
+        t2.start();
+
+        t1.join();
+        t2.join();
+
+        System.out.println(sharedCounter.getCount());                               // now output is as expected   // 100000
+    }
+}
+
